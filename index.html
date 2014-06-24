@@ -5,10 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
         </title>
+		<link href="owl.carousel.css" rel="stylesheet">
+		<link href="owl.theme.css" rel="stylesheet">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
         <link rel="stylesheet" href="my.css" />
         <style>
-            /* App custom styles */
+            .owl-item
+			{
+			text-align:center;
+			}
+			#map-page, #map-canvas { width: 100%; height: 100%; padding: 0; }
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
         </script>
@@ -18,33 +24,334 @@
         </script>
     </head>
     <body>
-        <!-- Home -->
-        <div data-role="page" id="page1">
-            <div data-theme="b" data-role="header">
+	<div data-role="page" id="home">
+            <div data-theme="a" data-role="header">
                 <h3>
                     ShoeComp
                 </h3>
             </div>
             <div data-role="content">
-                <div style=" text-align:center">
-                    <img style="width: 200px; height: 200px" src="http://i.imgur.com/gIchO2Z.jpg" />
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+					<center>
+                        <div style="">
+                           <a href=""> <img style="width: 150px; height: 150px" src="http://i445.photobucket.com/albums/qq180/nikekiddta/Nike-Logo-psd19613.png" /></a>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+					<center>
+                        <div style="">
+                          <a href="">  <img style="width: 150px; height: 150px" src="http://img3.wikia.nocookie.net/__cb20120131015247/adidas/images/0/01/562px-Adidas_Logo.png" /></a>
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+					<center>
+                        <div style="">
+                           <a href=""> <img style="width: 150px; height: 150px" src="http://www.thefreestylers.co.uk/communities/6/004/012/423/396//images/4604911147.png" /></a>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+					<center>
+                        <div style="">
+                           <a href="#cons"> <img style="width: 150px; height: 150px" src="http://images.wikifashion.com/uploads/f/f0/325px-Converse_logo.svg.png" /></a>
+                        </div>
+                    </div>
+					</center>
                 </div>
-                <a data-role="button" data-theme="b" href="http://www.jdsports.ie/028013/028013-air-max-90-lunar-comfort-3-0">
-                    JD Price : €100 *Sale*
+            </div>
+        </div>
+	
+	<!--Cons slider-->
+	<div data-role="page" id="cons">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Convers                </h3>
+            </div>
+            <div data-role="content">
+                <div id="demo">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <h1>Items</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="span12">
+
+              <div id="owl-example1" class="owl-carousel">
+
+                <div class="item darkCyan">
+                 <a href="#page1"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyush5uk-k8CNOsQzZJ-QfOa4rISNwHlZV7SZFGhcJsKV4xdnzXw" alt="Touch">
+                    </a>
+                </div>
+                <div class="item forestGreen">
+                  <a href="#page13"> <img src="http://images.footlocker.com/is/image//EBFL/141098_fr_converse_sc7?hei=500&amp;wid=500" height="200px" width="200px" alt="Multi"> </a> 
+                </div>
+                <div class="item orange">
+                  <a href="#page14"> <img style="width: 200px; height: 200px" src="http://images.footlocker.com/is/image//EBFL/144261C_fr_converse_sc7?hei=500&amp;wid=500" />
+                 </a>
+                </div>
+
+                <div class="item yellow">
+                  <a href="#page15"> <img style="width: 250px; height: 200px" src="data:image/jpeg;base64,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" />
+                 </a>  
+                </div>
+
+                <div class="item dodgerBlue">
+                 <a href="#page16"> <img style="width: 250px; height: 200px" src="data:image/jpeg;base64,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" />
+                 </a>
+                    
+                </div>              
+
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+            </div>
+        </div>
+	
+	
+	
+	
+	
+        <!-- Price Page 1 Con -->
+        <div data-role="page" data-theme="d" id="page1">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-transition="slidefade" data-theme="c" href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    SC
                 </a>
-                <a data-role="button" data-theme="b" href="#page1">
-                    Schuh : €124
+                <h5>
+                    ShoeComp
+                </h5>
+            </div>
+            <div data-role="content">
+			
+                <div style=" text-align:center">
+                    <img style="width: 200px; height: 200px" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyush5uk-k8CNOsQzZJ-QfOa4rISNwHlZV7SZFGhcJsKV4xdnzXw" />
+                </div>
+                <div>
+                    <h3 data-mce-style="text-align: center;" style="text-align: center;">
+                        <span style="font-family: 'times new roman', times; font-size: large;">
+                            <b>
+                                Converse All Star Hi
+                            </b>
+                        </span>
+                    </h3>
+                </div>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://ie.schuh.co.uk/converse/womens-navy-converse-all-star-hi-vi-eyelet-cut-out/1923115870/">
+                    Footlocker price : €59.99
                 </a>
-                <a data-role="button" data-theme="b" href="#page1">
-                    Lifestyle : €125
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://www.footlocker.com/product/model:22921/sku:142204C/converse-all-star-hi-mens/navy/white/?cm=GLOBAL%20SEARCH%3A%20KEYWORD%20SEARCH">
+                    Schuh price : € 63.99
                 </a>
-                <a data-role="button" data-theme="b" href="#page1">
-                    Footlocker : €127
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    Lifestyle price : € 67.99
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    JD price : € 69.99
                 </a>
             </div>
         </div>
+        <!-- Price Page 2 Con -->
+        <div data-role="page" data-theme="d" id="page13">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-transition="slidefade" data-theme="c" href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    SC
+                </a>
+                <h5>
+                    ShoeComp
+                </h5>
+            </div>
+            <div data-role="content">
+                <div style=" text-align:center">
+                    <img style="width: 200px; height: 200px" src="http://images.footlocker.com/is/image//EBFL/141098_fr_converse_sc7?hei=500&amp;wid=500" />
+                </div>
+                <div>
+                    <h3 itemprop="name" style="text-align: center;">
+                        <strong>
+                            <span style="font-family: 'times new roman', times; font-size: large;" data-mce-style="font-family: 'times new roman', times; font-size: large;">
+                                Converse CT Double Upper
+                            </span>
+                        </strong>
+                    </h3>
+                </div>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://www.footlocker.com/product/model:101690/sku:141098/converse-ct-double-upper-mens/black/pink/?cm=GLOBAL%20SEARCH%3A%20KEYWORD%20SEARCH">
+                    Footlocker price : €54.99
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    Schuh price : € 60.99
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    Lifestyle price : € 62.50
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    JD price : € 69.99
+                </a>
+            </div>
+        </div>
+        <!-- Price Page 3 Con -->
+        <div data-role="page" data-theme="d" id="page14">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-transition="slidefade" data-theme="c" href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    SC
+                </a>
+                <h5>
+                    ShoeComp
+                </h5>
+            </div>
+            <div data-role="content">
+                <div style=" text-align:center">
+                    <img style="width: 200px; height: 200px" src="http://images.footlocker.com/is/image//EBFL/144261C_fr_converse_sc7?hei=500&amp;wid=500" />
+                </div>
+                <div>
+                    <h3 data-mce-style="text-align: center;" style="text-align: center;">
+                        <span style="font-family: 'times new roman', times; font-size: large;" data-mce-style="font-family: 'times new roman', times; font-size: large;">
+                            <b>
+                                Converse Aerojam
+                            </b>
+                        </span>
+                    </h3>
+                </div>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://www.footlocker.com/product/model:207315/sku:144261C/converse-aerojam-mens/white/black/?cm=GLOBAL%20SEARCH%3A%20KEYWORD%20SEARCH">
+                    Footlocker price : €89.99
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://www.footlocker.com/product/model:22921/sku:142204C/converse-all-star-hi-mens/navy/white/?cm=GLOBAL%20SEARCH%3A%20KEYWORD%20SEARCH">
+                    Schuh price : € 95.99
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    JD price : € 99.99
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    Lifestyle price : € 109.99
+                </a>
+            </div>
+        </div>
+        <!-- Price Page 4 Con -->
+        <div data-role="page" data-theme="d" id="page15">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-transition="slidefade" data-theme="c" href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    SC
+                </a>
+                <h5>
+                    ShoeComp
+                </h5>
+            </div>
+            <div data-role="content">
+                <div style=" text-align:center">
+                    <img style="width: 250px; height: 200px" src="data:image/jpeg;base64,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" />
+                </div>
+                <div>
+                    <h3 style="text-align: center;">
+                        <strong>
+                            <span style="font-family: 'times new roman', times; font-size: large;" data-mce-style="font-family: 'times new roman', times; font-size: large;">
+                                Converse Star Player Lo Pro
+                            </span>
+                        </strong>
+                    </h3>
+                </div>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://www.jdsports.ie/009913/009913-star-player-lo-pro">
+                    JD price : € 38.00
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    Lifestyle price : € 50.99
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    Footlocker price : € 55.35
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://www.footlocker.com/product/model:22921/sku:142204C/converse-all-star-hi-mens/navy/white/?cm=GLOBAL%20SEARCH%3A%20KEYWORD%20SEARCH">
+                    Schuh price : € 57.00
+                </a>
+            </div>
+        </div>
+        <!-- Price Page 5 Con -->
+        <div data-role="page" data-theme="d" id="page16">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-transition="slidefade" data-theme="c" href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    SC
+                </a>
+                <h5>
+                    ShoeComp
+                </h5>
+            </div>
+            <div data-role="content">
+                <div style=" text-align:center">
+                    <img style="width: 250px; height: 200px" src="data:image/jpeg;base64,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" />
+                </div>
+                <div>
+                    <h3 data-mce-style="text-align: center;" style="text-align: center;">
+                        <span style="font-family: 'times new roman', times; font-size: large;">
+                            <strong>
+                                Converse Star Player Plus Hi
+                            </strong>
+                        </span>
+                    </h3>
+                </div>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://www.jdsports.ie/009909/009909-star-player-plus-hi">
+                    JD price : € 32
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    Lifestyle price : € 74.99
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://shoecomppricewebsite.ie.newimage/mylinkathome/comp/intres_page/newpage">
+                    Footlocker price : € 70.99
+                </a>
+                <a data-role="button" data-transition="pop" data-theme="b" href="http://www.footlocker.com/product/model:22921/sku:142204C/converse-all-star-hi-mens/navy/white/?cm=GLOBAL%20SEARCH%3A%20KEYWORD%20SEARCH">
+                    Schuh price : € 80.00
+                </a>
+            </div>
+        </div>
+		<script src="owl.carousel.min.js"></script>
+		
         <script>
-            //App custom javascript
+            $(document).ready(function($) {
+      $("#owl-example,#owl-example1").owlCarousel();
+    });
+
+
+    $("body").data("page", "frontpage");
         </script>
+		<script type="text/javascript">
+    jQuery(function($){
+      var disqus_loaded = false;
+      var top = $("#faq").offset().top; 
+      var owldomain = window.location.hostname.indexOf("owlgraphic");
+      var comments = window.location.href.indexOf("comment");
+
+      if(owldomain !== -1){
+        function check(){
+          if ( (!disqus_loaded && $(window).scrollTop() + $(window).height() > top) || (comments !== -1) ){
+            $(window).off( "scroll" )
+            disqus_loaded = true;
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'owlcarousel'; // required: replace example with your forum shortname
+            var disqus_identifier = 'OWL Carousel';
+            //var disqus_url = 'http://owlgraphic.com/owlcarousel/';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          }
+        }
+        $(window).on( "scroll", check )
+        check();
+      } else {
+        $('.disqus').hide();
+      }
+    });
+	
+	
+
+    </script>
     </body>
 </html>
+
